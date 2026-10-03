@@ -1,4 +1,4 @@
-# Aseprite
+# Aseprite for Fusion Studio Integration
 
 [![build](https://github.com/aseprite/aseprite/actions/workflows/build.yml/badge.svg)](https://github.com/aseprite/aseprite/actions/workflows/build.yml)
 [![Translation Status](https://hosted.weblate.org/widget/aseprite/aseprite/svg-badge.svg)](https://hosted.weblate.org/engage/aseprite/)
@@ -7,7 +7,17 @@
 
 ## Introduction
 
-**Aseprite** is a program to create animated sprites. Its main features are:
+**Aseprite** is a game development tool that creates 2D animated sprite graphics. 
+
+To help accelerate 8-bit focused game development, ATSF Studios' in-house dev team has built a new integration plug-in that allows Asprite assets to be used with the BMD Fusion Studio compositing software. 
+
+The Fusion Studio, and Resolve Studio Fusion page hosted Aseprite plug-in uses a concept called "Renderless Compositing" under the hood. This allows the host package to access the native Aseprite 2D graphics elements via an "in-memory zero copy" approach. 
+
+From a technology perspective, this relies on a low-level I/O bridge interface that is fast and efficient. The Renderless Compositing technique means you are now longer burning out your NVME disks' with constant write cycles. 
+
+This means no intermediate temp files or disk caches are required, when you are bouncing Aseprite created footage between host apps. Yay! Progress!!
+
+The Aseprite programs' main features are:
 
 * Sprites are composed of [layers &amp; frames](https://www.aseprite.org/docs/timeline/) as separated concepts.
 * Support for [color profiles](https://www.aseprite.org/docs/color-profile/) and different [color modes](https://www.aseprite.org/docs/color-mode/): RGBA, Indexed (palettes up to 256 colors), Grayscale.
@@ -50,12 +60,12 @@ You can ask for help in:
 
 ## Credits
 
-Aseprite was originally created by [David Capello](https://davidcapello.com/)
+[Aseprite](https://github.com/aseprite/aseprite) was originally created by [David Capello](https://davidcapello.com/)
 and is now being developed and maintained by [Igara Studio](https://igara.com/)
-and contributors.
-
-Check the [AUTHORS](AUTHORS.md) file for details about the active team
+and contributors. Check the [AUTHORS](AUTHORS.md) file for details about the active team
 of developers working on Aseprite.
+
+[Aseprite for Fusion Studio](https://github.com/ATSFSTUDIOS/Aseprite-for-Fusion-Studio) is a new plug-in developed by [ATSF Studios](https://github.com/ATSFSTUDIOS), [Andrew Hazelden](https://github.com/AndrewHazelden),  Andromeda_Girl, and contributors.
 
 ## License
 
